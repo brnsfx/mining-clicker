@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Bernardo Viaro: main page structure (HTML) -->
+<header>
+    <h1>⛏️ Mining Clicker</h1>
+</header>
+<main>
+    <section id="game-area">
+        <div id="gold-display">
+            Gold: <span id="gold-amount">0</span>
+        </div>
+        <button id="rock" aria-label="Mine the rock">
+            <span class="gold-fleck f1"></span>
+            <span class="gold-fleck f2"></span>
+            <span class="gold-fleck f3"></span>
+        </button>
+        <p id="click-info">Gold per click: <span id="gold-per-click">1</span></p>
+        <div id="floating-texts"></div>
+    </section>
+    <section id="description">
+        <h2>About the game</h2>
+        <p>
+            Mining Clicker is an idle/clicker game. You are a miner digging for gold:
+            click the rock, collect gold and use it to grow your mining empire.
+        </p>
+        <h2>How to play</h2>
+        <ol>
+            <li>Click the big rock to mine gold.</li>
+            <li>Every click gives you gold. Your total is shown at the top.</li>
+            <li>Your progress is saved automatically in your browser, so you can come back later.</li>
+        </ol>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
