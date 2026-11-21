@@ -106,3 +106,97 @@ main {
   color: #ffd54a;
   margin-top: 0;
 }
+
+/* Andrieiev Volodymyr: shop layout and upgrade buttons */
+#right-column {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#shop {
+  background: #3a2d21;
+  padding: 15px 28px;
+  border-radius: 12px;
+}
+#shop h2, #statistics h2 {
+  color: #ffd54a;
+  margin: 0 0 14px;
+}
+.upgrade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid #65503c;
+}
+.upgrade h3 {
+  margin: 0 0 6px;
+  color: #f3e9d8;
+}
+.upgrade p {
+  margin: 4px 0;
+  color: #cbb994;
+}
+.upgrade button {
+  padding: 12px;
+  min-width: 145px;
+  border: none;
+  border-radius: 7px;
+  background: #d9a52b;
+  color: #2b2118;
+  font-weight: bold;
+  cursor: pointer;
+}
+.upgrade button:hover {
+  background: #ffd54a;
+}
+.upgrade button:disabled {
+  background: #786d58;
+  color: #d1c4b1;
+  cursor: not-allowed;
+}
+
+/* Petrenko Andii: statistics box and reset button */
+#statistics {
+  background: #3a2d21;
+  padding: 15px 28px;
+  border-radius: 12px;
+}
+#statistics p {
+  margin: 8px 0;
+}
+#reset-game {
+  padding: 9px 14px;
+  margin-top: 10px;
+  border: 1px solid #c47b5c;
+  border-radius: 6px;
+  background: #58352b;
+  color: #f3e9d8;
+  cursor: pointer;
+}
+#reset-game:hover {
+  background: #754537;
+}
+#save-message {
+  font-size: 0.85rem;
+  color: #cbb994;
+}
+
+/* Small extra rule so the sections stack on narrower screens. */
+@media (max-width: 1250px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+  }
+  #game-area, #right-column {
+    width: 100%;
+    max-width: 600px;
+  }
+  #description {
+    width: 100%;
+  }
+}

@@ -24,20 +24,61 @@
         <p id="click-info">Gold per click: <span id="gold-per-click">1</span></p>
         <div id="floating-texts"></div>
     </section>
-    <section id="description">
-        <h2>About the game</h2>
-        <p>
-            Mining Clicker is an idle/clicker game. You are a miner digging for gold:
-            click the rock, collect gold and use it to grow your mining empire.
-        </p>
-        <h2>How to play</h2>
-        <ol>
-            <li>Click the big rock to mine gold.</li>
-            <li>Every click gives you gold. Your total is shown at the top.</li>
-            <li>Your progress is saved automatically in your browser, so you can come back later.</li>
-        </ol>
-    </section>
+
+    <div id="right-column">
+        <!-- Andrieiev Volodymyr: shop and upgrade buttons -->
+        <section id="shop">
+            <h2>Mining Shop</h2>
+            <div class="upgrade">
+                <div>
+                    <h3>Better Pickaxe</h3>
+                    <p>+1 gold per click</p>
+                    <p>Level: <span id="pickaxe-level">0</span></p>
+                </div>
+                <button id="buy-pickaxe">Buy for <span id="pickaxe-price">10</span> gold</button>
+            </div>
+            <div class="upgrade">
+                <div>
+                    <h3>Hire a Miner</h3>
+                    <p>+1 gold every second</p>
+                    <p>Miners: <span id="miner-count">0</span></p>
+                </div>
+                <button id="buy-miner">Buy for <span id="miner-price">50</span> gold</button>
+            </div>
+        </section>
+
+        <!-- Petrenko Andii: statistics and reset button -->
+        <section id="statistics">
+            <h2>Statistics</h2>
+            <p>Total gold mined: <span id="total-mined">0</span></p>
+            <p>Rock clicks: <span id="total-clicks">0</span></p>
+            <p>Upgrades bought: <span id="upgrades-bought">0</span></p>
+            <p>Gold per second: <span id="gold-per-second">0</span></p>
+            <button id="reset-game">Reset Game</button>
+            <p id="save-message">Your game is saved automatically.</p>
+        </section>
+
+        <!-- Bernardo Viaro: game description. Instructions updated for the shop. -->
+        <section id="description">
+            <h2>About the game</h2>
+            <p>
+                Mining Clicker is an idle/clicker game. You are a miner digging for gold:
+                click the rock, collect gold and use it to grow your mining empire.
+            </p>
+            <h2>How to play</h2>
+            <ol>
+                <li>Click the big rock to mine gold.</li>
+                <li>Buy a better pickaxe to get more gold from every click.</li>
+                <li>Hire miners to collect gold automatically every second.</li>
+                <li>See your progress in the statistics section.</li>
+                <li>Progress saves automatically. Use Reset Game to start over.</li>
+            </ol>
+        </section>
+    </div>
 </main>
+<!-- Game first, shop second, and saving/statistics last. -->
 <script src="script.js"></script>
+<script src="shop.js"></script>
+<script src="save.js"></script>
 </body>
 </html>
